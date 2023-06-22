@@ -169,7 +169,17 @@ span{
 }
 
 .btn:hover{
-    box-shadow: none;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--second-bg-color);
+    border-radius: 4rem;
+    border: 0.2rem solid var(--main-color);
+    box-shadow: 0 0 1rem var(--second-bg-color);
+    font-size: 1.6rem;
+    color: var(--text-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
 }
 
 .about-img img {
