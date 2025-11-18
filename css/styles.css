@@ -604,3 +604,45 @@ span{
         margin-top: 2rem;
     }
 }
+
+/* DETAILS CONTAINER */
+.services-box .details {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.6s ease;
+    margin-top: 1.5rem;
+    
+    /* real list styles */
+    list-style-type: disc;         /* bullets */
+    list-style-position: outside;  /* bullet outside text */
+    padding-left: 4rem;            /* space for bullets */
+    text-align: left;              /* align left */
+}
+
+/* SHOW DETAILS ON HOVER */
+.services-box:hover .details {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* LI ITEMS (must be list-item) */
+.services-box .details li {
+    display: list-item;             /* THIS fixes bullet issue */
+    margin-bottom: 0.7rem;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.4s ease;
+}
+
+/* SHOW EACH LI */
+.services-box:hover .details li {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* OPTIONAL: DELAY EACH ITEM FOR SMOOTH ENTRY */
+.services-box:hover .details li:nth-child(1) { transition-delay: 0.1s; }
+.services-box:hover .details li:nth-child(2) { transition-delay: 0.2s; }
+.services-box:hover .details li:nth-child(3) { transition-delay: 0.3s; }
+.services-box:hover .details li:nth-child(4) { transition-delay: 0.4s; }
+.services-box:hover .details li:nth-child(5) { transition-delay: 0.5s; }
