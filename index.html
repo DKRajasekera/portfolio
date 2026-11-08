@@ -1,192 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dulaksha Rajasekera</title>
-
-    <!-- box font icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-    <!-- css link  -->
-    <link rel="stylesheet" href="css/styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Dulaksha Rajasekera | Portfolio. Structure: index.html + css/style.css + js/main.js + images/ + assets/ -->
+<title>Dulaksha Rajasekera | Software Engineer</title>
+<meta name="description" content="Portfolio of Dulaksha Rajasekera, Software Engineer. Full-stack, IoT and machine learning projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <!-- header section  -->
-    <header class="header">
-        <a href="#" class="logo">Dulaksha Rajasekera</a>
+<div id="bar"></div>
+<nav><div class="w"><a href="#home" class="logo">Dulaksha<span class="g">.</span></a>
+<div class="lk" id="lk"><a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a><button id="th" aria-label="Toggle theme">🌙</button></div>
+<button id="mn" aria-label="Menu">☰</button></div></nav>
 
-        <i class='bx bx-menu' id="menu-icon"></i>
+<!-- ============ HERO ============ -->
+<section id="home"><div class="w hero">
+<div>
+<div class="pill"><span class="dot"></span> Software Engineer · Sri Lanka</div>
+<h1>Hi, I'm <span class="g">Dulaksha Rajasekera</span></h1>
+<div class="role">I'm a <span id="ty"></span><span>|</span></div>
+<p>Software Engineering graduate with hands-on industry experience in full-stack development, automation and IoT. I turn real business problems into reliable, user-friendly software.</p>
+<div class="bt"><a class="btn p" href="assets/Dulaksha%20Rajasekera.pdf" download>Download CV</a><a class="btn s" href="#projects">View Projects</a></div>
+<div class="so">
+<a href="https://github.com/DKRajasekera" aria-label="GitHub" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.58.23 2.75.11 3.04.74.8 1.18 1.83 1.18 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg></a>
+<a href="https://www.linkedin.com/in/dulaksha-rajasekera/" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.06c.53-1 1.83-2 3.77-2 4 0 4.77 2.64 4.77 6.07V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.33-1.96 2.7V21h-4z"/></svg></a>
+<a href="mailto:dkrajasekera@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4.5 7v1.9L12 14l7.5-5.1V7z"/></svg></a>
+<a href="https://www.instagram.com/dulaksha._r/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/></svg></a>
+</div>
+<div class="facts"><div><b>Role</b><span>Software Engineer</span></div><div><b>Based in</b><span>Sri Lanka</span></div><div><b>Degree</b><span>BSc (Hons) Software Eng.</span></div></div></div>
+<div class="ph"><img src="images/profile.jpg" alt="Portrait of Dulaksha Rajasekera"></div>
+</div></section>
 
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Skills</a>
-            <a href="#portfolio">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+<!-- ============ ABOUT ============ -->
+<section id="about"><div class="w"><header class="sh"><div class="ey">About</div><h2>Building software that <span class="g">solves real problems</span></h2><p>Who I am and what drives my work.</p></header>
+<div class="ab rv">
+<img class="apic" src="images/about.jpg" alt="Dulaksha Rajasekera on campus" loading="lazy">
+<div class="abt">
+<p>I'm a motivated Software Engineering graduate (BSc Hons, IIT / University of Westminster) with real production experience. I work across front-end and back-end, build automation tools, and enjoy collaborating with consultants and teams to gather requirements and ship solutions that people actually use.</p>
+<p>From enterprise automation with Power Platform to an IoT greenhouse powered by machine learning, I like projects that connect software with the real world. I'm committed to continuous learning and being a reliable team member.</p>
+<div class="bt"><a class="btn p" href="https://www.linkedin.com/in/dulaksha-rajasekera/" target="_blank" rel="noopener">Connect on LinkedIn</a><a class="btn s" href="#contact">Get in touch</a></div>
+</div></div>
+<div class="st4 rv"><div class="cd stt"><b class="g">1+</b><span>Year internship experience</span></div><div class="cd stt"><b class="g">7</b><span>Featured projects</span></div><div class="cd stt"><b class="g">2025</b><span>BSc (Hons) graduate</span></div><div class="cd stt"><b class="g">Full-stack</b><span>Web, IoT &amp; ML</span></div></div>
+</div></section>
 
-    <!-- home section design -->
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hello, It's Me</h3>
-            <h1>Dulaksha Rajasekera</h1>
-            <h3>And I'm <span class="multiple-text"></span></h3>
-            <p>Passionate Software engineer with problem-solving skills and programming language knowledge. <br> I'm
-                eager to learn and work on new projects.</p>
-            <div class="social-media">
-                <a href="https://github.com/DKRajasekera" target="_blank"><i class='bx bxl-github'></i></a>
-                <a href="https://www.instagram.com/dulaksha._r/" target="_blank"><i
-                        class='bx bxl-instagram-alt'></i></a>
-                <a href="https://www.linkedin.com/in/dulaksha-rajasekera/" target="_blank"><i
-                        class='bx bxl-linkedin'></i></a>
-            </div>
-            <a href="assets/Dulaksha Rajasekera.pdf" class="btn" download>Download CV</a>
-        </div>
+<!-- ============ SKILLS ============ -->
+<section id="skills"><div class="w"><header class="sh"><div class="ey">Expertise</div><h2>Skills &amp; <span class="g">technologies</span></h2><p>The languages, frameworks and tools I work with, grouped by area.</p></header>
+<div class="g3">
+<div class="cd rv"><div class="ic">🌐</div><h3>Frontend</h3><p>Responsive, component-based interfaces with strong UI/UX foundations.</p><div class="tg"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Angular</span><span>React</span><span>Next.js</span><span>Figma</span></div></div>
+<div class="cd rv"><div class="ic">🗄️</div><h3>Backend &amp; Databases</h3><p>APIs, server logic and well-structured data layers.</p><div class="tg"><span>Node.js</span><span>Express</span><span>Nest.js</span><span>PHP</span><span>.NET</span><span>MySQL</span><span>PostgreSQL</span><span>MongoDB</span><span>Firebase</span></div></div>
+<div class="cd rv"><div class="ic">☕</div><h3>Programming</h3><p>Solid OOP foundations and data-focused scripting.</p><div class="tg"><span>Java</span><span>OOP</span><span>Python</span><span>R</span><span>Jupyter</span></div></div>
+<div class="cd rv"><div class="ic">📡</div><h3>IoT &amp; ML</h3><p>Sensors to dashboards, with predictions powered by machine learning.</p><div class="tg"><span>Arduino</span><span>ESP32</span><span>scikit-learn</span><span>Data analysis</span></div></div>
+<div class="cd rv"><div class="ic">⚡</div><h3>Automation</h3><p>Low-code and business process automation for enterprise teams.</p><div class="tg"><span>Power Apps</span><span>Power Automate</span><span>Power BI</span></div></div>
+<div class="cd rv"><div class="ic">🛠️</div><h3>Tools &amp; Workflow</h3><p>Version control, containers and collaborative delivery.</p><div class="tg"><span>Git</span><span>GitHub</span><span>Docker</span><span>VS Code</span></div></div>
+</div></div></section>
 
-        <div class="home-img">
-            <img src="images\WhatsApp Image 2023-05-24 at 23.45.07.jpg" alt="">
-        </div>
-    </section>
+<!-- ============ EXPERIENCE ============ -->
+<section id="experience"><div class="w"><header class="sh"><div class="ey">Career</div><h2>Work <span class="g">experience</span></h2><p>Where I have worked and what I delivered.</p></header>
+<div class="tl">
+<div class="cd rv"><div class="dt">Jun 2025 – Present</div><h3>Software Engineer</h3><div class="sub">Arcadia Traders</div>
+<ul><li>Work on a PHP-based stock management system.</li><li>Fix bugs, optimise performance and implement feature updates to improve usability.</li><li>Handle deployments and ensure smooth system operations.</li></ul></div>
+<div class="cd rv"><div class="dt">Oct 2023 – Oct 2024</div><h3>Software Engineering Intern</h3><div class="sub">Fortude (Pvt) Ltd (formerly Brandix i3) · Brandix Digital Operations</div>
+<ul><li>Hands-on front-end and back-end work with Nest.js, Angular, .NET, SQL, PostgreSQL, MySQL, Docker, Git and GitHub.</li><li>Developed and deployed enterprise apps using Power Apps, Power Automate and Power BI.</li><li>Gathered requirements with functional consultants and designed automation-driven solutions.</li><li>Managed databases: normalisation, server setup and user permission control.</li><li>Troubleshooting, testing and deployment to live production, plus system design discussions and support.</li></ul></div>
+</div></div></section>
 
-    <!-- about section  -->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="images/WhatsApp Image 2023-06-15 at 18.56.31.jpg" alt="">
-        </div>
+<!-- ============ PROJECTS ============ -->
+<section id="projects"><div class="w"><header class="sh"><div class="ey">Portfolio</div><h2>Featured <span class="g">projects</span></h2><p>A selection of work across web, IoT, machine learning and Java. Filter by category or click a card for details.</p></header>
+<div class="flt rv" id="flt"><button class="on" data-f="all">All</button><button data-f="web">Web</button><button data-f="ml">IoT &amp; ML</button><button data-f="java">Java</button></div>
+<div class="g3" id="pg">
+<article class="cd pj rv" data-cat="ml"><div class="top"></div><h3>Smart Greenhouse Automation</h3><p>Intelligent greenhouse that automates climate control using real-time sensor data and ML predictions. Built the full pipeline: sensor calibration, model training and a responsive React dashboard to monitor and control the environment.</p><div class="tg"><span>ESP32</span><span>Node.js</span><span>Python</span><span>React</span><span>Firebase</span></div></article>
+<article class="cd pj rv" data-cat="ml web"><div class="top"></div><h3>Qonvo, Online Meeting Platform</h3><p>Online meeting platform combining real-time communication with ML-based automation features. Designed the front-end UI, Firebase integrations and machine-learning functionality.</p><div class="tg"><span>JavaScript</span><span>Python</span><span>Firebase</span></div></article>
+<article class="cd pj rv" data-cat="web"><div class="top"></div><h3>PLM Color Automation Tool</h3><p>Deployed business automation tool that removed repetitive daily manual tasks. Worked with a functional consultant on requirements and workflow logic for a production-ready solution.</p><div class="tg"><span>Angular</span><span>Next.js</span></div></article>
+<article class="cd pj rv" data-cat="java"><div class="top"></div><h3>Skin Consultation Manager</h3><p>Consultation management system to book appointments and view doctor availability in real time, with robust backend logic, class hierarchies and an admin dashboard.</p><div class="tg"><span>Java</span><span>OOP</span></div><a class="m" href="https://github.com/DKRajasekera/SkinConsultationManager" target="_blank" rel="noopener">View on GitHub →</a></article>
+<article class="cd pj rv" data-cat="java"><div class="top"></div><h3>Cruise Ship Boarding System</h3><p>Cabin booking and queue management system: reserve rooms, check availability or join a waiting list when full, with full booking flow and queue logic.</p><div class="tg"><span>Java</span><span>OOP</span></div><a class="m" href="https://github.com/DKRajasekera/Cruise_Ship_Boarding" target="_blank" rel="noopener">View on GitHub →</a></article>
+<article class="cd pj rv" data-cat="web"><div class="top"></div><h3>Hometeq, E-Commerce Platform</h3><p>Online shopping system with account creation, product browsing and a shopping basket. Handled front-end pages, database connectivity and item management logic.</p><div class="tg"><span>PHP</span><span>HTML</span><span>CSS</span><span>MySQL</span></div><a class="m" href="https://github.com/DKRajasekera/Hometeq" target="_blank" rel="noopener">View on GitHub →</a></article>
+<article class="cd pj rv" data-cat="ml"><div class="top"></div><h3>Grade Maker</h3><p>Predictive tool that forecasts student grades from input marks, with a custom prediction algorithm and input validation.</p><div class="tg"><span>Python</span></div><a class="m" href="https://github.com/DKRajasekera/Grade_maker" target="_blank" rel="noopener">View on GitHub →</a></article>
+</div>
+<p style="text-align:center;margin-top:34px"><a class="btn s" href="https://github.com/DKRajasekera?tab=repositories" target="_blank" rel="noopener">All repositories on GitHub</a></p>
+</div></section>
 
-        <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
-            <h3>Software Engineer</h3>
-            <p>Hey, my name is Dulaksha Rajasekera, and I am a software engineer at the Informatics Institute of
-                Technology in Sri Lanka, which is affiliated with the University of Westminster in the United Kingdom.
-                Apart from being a Software Engineer, I am proud of my website development skills and understanding of
-                programming languages such as Java, Python, MySQL and R language, among others. As an ambitious
-                developer, I am constantly keen to learn new technologies and processes in order to keep current with
-                industry trends. My ultimate objective is to become a professional software engineer who contributes
-                significantly to the IT sector.</p>
+<!-- ============ EDUCATION ============ -->
+<section id="education"><div class="w"><header class="sh"><div class="ey">Background</div><h2>Education &amp; <span class="g">achievements</span></h2><p>My studies, certifications and activities.</p></header>
+<div class="ed">
+<div class="cd rv"><div class="dt">2021 – 2025</div><h3>BSc (Hons) Software Engineering</h3><div class="sub">Informatics Institute of Technology (IIT) · University of Westminster</div>
+<div class="dt" style="margin-top:18px">2017 · 2020</div><h3>G.C.E O/L &amp; A/L (Commerce)</h3><div class="sub">St. Joseph's College, Colombo 10</div></div>
+<div class="cd rv"><h3>Certifications</h3><div class="cert"><div><b>DITEC</b> <span class="sub">· Esoft Metro Campus: IT skills, networking and programming</span></div><div><b>PCM</b> <span class="sub">· SLIM: branding and consumer behaviour</span></div><div><b>PTE</b> <span class="sub">· YGC: English proficiency</span></div></div></div>
+<div class="cd rv"><h3>Activities</h3><ul><li>Member, IIT IEEE Computer Society</li><li>Participant, Duothan 3.0</li><li>Microsoft Imagine Cup 2023</li><li>Code Sprint 7.0</li><li>IT Manager, Junior Achievers Sri Lanka (2020)</li></ul></div>
+<div class="cd rv"><h3>Extra learning &amp; languages</h3><ul><li>Java Object-Oriented Programming</li><li>Learn Java with Swing</li><li>Learning Angular</li><li>Languages: Sinhala, English</li></ul></div>
+</div></div></section>
 
-            <a href="https://www.linkedin.com/in/dulaksha-rajasekera/" class="btn" target="_blank"><i
-                    class='bx bxl-linkedin-square'></i>LinkedIn</a>
-        </div>
-    </section>
+<!-- ============ CONTACT ============ -->
+<section id="contact"><div class="w"><div class="ct rv">
+<div><div class="ey">Contact</div><h2>Let's build something <span class="g">together</span></h2><p>Open to new opportunities, collaborations and interesting projects. Reach out and I'll get back to you.</p><a class="btn p" href="mailto:dkrajasekera@gmail.com">Send an email</a></div>
+<div class="cl">
+<a href="mailto:dkrajasekera@gmail.com"><span class="ci">✉️</span><div><b>Email</b><span>dkrajasekera@gmail.com</span></div></a>
+<a href="https://www.linkedin.com/in/dulaksha-rajasekera/" target="_blank" rel="noopener"><span class="ci">💼</span><div><b>LinkedIn</b><span>dulaksha-rajasekera</span></div></a>
+<a href="https://github.com/DKRajasekera" target="_blank" rel="noopener"><span class="ci">💻</span><div><b>GitHub</b><span>DKRajasekera</span></div></a>
+</div></div></div></section>
 
-    <section class="services" id="services">
-        <h2 class="heading">My <span>Skills</span></h2>
+<footer><div class="w fw"><span>© <span id="yr"></span> Dulaksha Rajasekera. All rights reserved.</span><span class="fl"><a href="#home">Home</a><a href="#projects">Projects</a><a href="#contact">Contact</a></span></div></footer>
+<button id="up" aria-label="Back to top">↑</button>
+<div class="md" id="md" role="dialog" aria-modal="true"><div class="mb"><button class="mx" id="mx" aria-label="Close">×</button><div id="mc"></div></div></div>
 
-        <div class="services-container">
-
-            <div class="services-box" data-skill="web">
-                <i class='bx bx-code-alt'></i>
-                <h3>Web Development</h3>
-                <p class="summary">I build responsive and user-friendly websites.</p>
-
-                <ul class="details"></ul>
-            </div>
-
-            <div class="services-box" data-skill="frontend">
-                <i class="bx bxs-palette"></i>
-                <h3>UI / UX & Frontend</h3>
-                <p class="summary">I design clean, modern frontends.</p>
-
-                <ul class="details"></ul>
-            </div>
-
-            <div class="services-box" data-skill="backend">
-                <i class="bx bx-server"></i>
-                <h3>Backend & Database</h3>
-                <p class="summary">I develop scalable backend systems.</p>
-
-                <ul class="details"></ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Protfolio section  -->
-    <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Projects</span></h2>
-
-        <div class="portfolio-container">
-
-            <div class="portfolio-box">
-                <img src="images/img1.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>Web Development</h4>
-                    <p>I design, develop, and deploy web solutions with a focus on user experience, accessibility, and
-                        performance.</p>
-                    <a href="projects/web-development.html"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="images/img2.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>Software Development</h4>
-                    <p>I've developed software solutions that solve complex problems and automate business processes.
-                    </p>
-                    <a href="projects/software-development.html"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="images/img3.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>Machine Learning Project</h4>
-                    <p>I've worked on a machine learning project that leverages data analysis and predictive modeling to
-                        solve complex problems.</p>
-                    <a href="projects/machine-learning.html"><i class="bx bx-link-external"></i></a>
-                </div>
-            </div>
-
-
-
-        </div>
-    </section>
-
-    <!-- cotact section  -->
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
-
-        <form action="mailto:dkrajasekera@gmail.com" method="post" enctype="text/plain">
-            <div class="input-box">
-                <input type="text" placeholder="Full Name" name="Full Name ">
-                <input type="email" placeholder="Email Address" name="Email Address ">
-            </div>
-
-            <div class="input-box">
-                <input type="number" placeholder="Mobile Number" name="Mobile Number ">
-                <input type="text" placeholder="Email Subject" name="Email Subject " id="suject" class="form-control">
-            </div>
-
-            <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message"
-                class="form-control"></textarea>
-            <input type="submit" id="mail-link" value="Send Message" class="btn">
-        </form>
-    </section>
-
-    <!-- footer section  -->
-    <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2023 by <a href="mailto:dkrajasekera@gmail.com" target="_blank">dulaksha-rajasekera</a>
-                | All Rights Reserved.</p>
-        </div>
-    </footer>
-
-    <!-- scroll to top button  -->
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class='bx bx-up-arrow-alt'></i></button>
-
-    <!-- scroll reveal  -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- typed js  -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-    <!-- java script link  -->
-    <script src="js/script.js"></script>
+<script src="js/main.js"></script>
 </body>
-
 </html>
